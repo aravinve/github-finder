@@ -6,16 +6,14 @@ const RepoItem = props => {
   return (
     <div className='card'>
       <h3>
-        <a href={repo.html_url} target='_blank'>
-          {repo.name}
-        </a>
+        <a href={repo.html_url}>{repo.name}</a>
       </h3>
     </div>
   );
 };
 
 RepoItem.propTypes = {
-  repos: PropTypes.object.isRequired
+  repo: PropTypes.object.isRequired
 };
 
 export default RepoItem;
